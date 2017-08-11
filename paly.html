@@ -5,6 +5,7 @@
 	<title>点播界面</title>
 	<link rel="stylesheet" href="./style/reset.css">
 	<link rel="stylesheet" href="./style/main.css">
+	<link rel="stylesheet" href="./style/play.css">
 </head>
 <body>
 	<!-- header 头部 -->
@@ -16,8 +17,8 @@
 			</div>
 			<div class="nav">
 				<ul>
-					<li class="active"><a href="index.html">直播</a></li>
-					<li><a href="play.html">点播</a></li>
+					<li><a href="index.html">直播</a></li>
+					<li class="active"><a href="play.html">点播</a></li>
 					<li><a href="login.html">登录</a></li>
 				</ul>
 			</div>
@@ -69,48 +70,139 @@
 			</div>
 		</div>
 		<!-- right 侧边栏部分 -->
-		<div class="right">
-			<!-- 手术简介和下载部分 -->
-			<div class="download">
-				<div class=" clearfix">
-					<ul>
-						<li class="changeBtn activeBtn">手术简介</li>
-						<li class="changeBtn">文件下载</li>
-					</ul>
-				</div>
-				<div class="doctor">
-					<p>手术医生：<span class="name">张启明教授</span></p>
-					<p>手术日期：<span class="date">2016/2/7</span></p>
-					<p>手术科室：<span class="address">8楼1002室</span></p>
-					<p>手术名称：<span class="operation">胸外科手术</span></p>
-				</div>
-				<div class="download_list">
-					<ul>
-						<li>1111<button>下载</button></li>
-						<li>1111<button>下载</button></li>
-						<li>1111<button>下载</button></li>
-						<li>1111<button>下载</button></li>
-						<li>1111<button>下载</button></li>
-						<li>1111<button>下载</button></li>
-				</div>
-			</div>
-			<!-- 互动 -->
-			<div class="msg">
-				<div class="sendMsg">
-					<ul>
-						<li><span>admin:</span>第一版本上线了</li>
-						<li><span>admin:</span>第一版本上线了</li>
-						<li><span>admin:</span>第一版本上线了</li>
-						<li><span>admin:</span>第一版本上线了</li>
-						<li><span>admin:</span>第一版本上线了</li>
-					</ul>
-				</div>
-				<div class="inputMsg">
-					<input type="text" placeholder="输入你的问题..."><button class="radio">语音</button><button class="send">发送</button>
-				</div>
-			</div>
+		<div class="video_tag">
+			<!-- 	<span><</span> -->
+				<figure>
+					<img class="cover" src="./src/cover.png" alt="cover">
+					<img src="./src/videoTag.jpg" alt="视频标签">
+					<figcaption>手术节点 <span>2'10"</span></figcaption>
+				</figure>
+				<figure >
+					<img class="cover " src="./src/cover.png" alt="cover">
+					<img src="./src/videoTag.jpg" alt="视频标签">
+					<figcaption>手术节点 <span>2'10"</span></figcaption>
+				</figure>
+				<figure>
+					<img class="cover" src="./src/cover.png" alt="cover">
+					<img src="./src/videoTag.jpg" alt="视频标签">
+					<figcaption>手术节点 <span>2'10"</span></figcaption>
+				</figure>
+			<!-- 		<span>></span> -->
 		</div>
-	</div>
+
+		<!--  视频选择视频类型 -->
+		<div class="videoSrc clearfix">
+			<h3>全部视频</h3>
+			<input class="video_input" type="text">
+			<div class="tag">
+				<ul>
+					<li class="tagActive">手术名称
+						<ul class="tag_two" style="display: none;">
+							<li><a href="#">普    外</a></li>
+							<li><a href="#">阑尾切除术</a></li>
+							<li><a href="#">胆囊切除术</a></li>
+							<li><a href="#">胆囊造口术</a></li>
+							<li><a href="#">脓肿引流</a></li>
+							<li><a href="#">肠造口术</a></li>
+							<li><a href="#">开腹探查术</a></li>
+							<li><a href="#">胃十二指肠肠吻合术</a></li>
+							<li><a href="#">痣切除术</a></li>
+							<li><a href="#">肝管切除术</a></li>
+							<li><a href="#">肝切除术</a></li>
+							<li><a href="#">疝修补术</a></li>
+							<li><a href="#">低位食管静脉结扎</a> </li>
+							<li><a href="#">胰切除术</a></li>
+							<li><a href="#">门腔静脉吻合术</a></li>
+							<li><a href="#">幽门成形术</a></li>
+						</ul>
+					</li>
+					<li>科室分类
+						<ul class="tag_two move2" style="display: block;">
+							<li>内科</li>
+							<li>外科</li>
+							<li>骨科</li>
+							<li>妇科</li>
+							<li>儿科</li>
+							<li>五官科</li>
+						</ul>
+					</li>
+					<li>医    生
+						<ul class="tag_two move3" style="display: none;">
+							<li>李丹丹副院长</li>
+							<li>李晓光</li>
+							<li>陈成华</li>
+							<li>王阳明</li>
+							<li>李涛教授</li>
+							<li>王  青</li>
+							<li>李丹丹副院长</li>
+							<li>龙小飞</li>
+						</ul>
+					</li>
+					<li>时    间
+						<ul class="tag_two move4" style="display: none;">
+							<li>最新</li>
+							<li>一个月内</li>
+							<li>三个月内</li>
+							<li>半年内</li>
+							<li>一年以上</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="videoShow clearfix">
+				<div class="video_ele">
+					<span class=""></span>
+					<img src="./src/videoSrc.jpg" alt="图片预览">
+					<h6>2017/1/7</h6>
+					<h4>胸外科手术</h4>
+					<p>手术主刀医生：李启明教授。主要内容：以卵圆窝为中点作一与腹股沟韧带平行的斜切口，长约6cm。切开皮肤、皮下组织、浅筋膜，显露卵</p>
+				</div>	
+				<div class="video_ele">
+					<img src="./src/videoSrc.jpg" alt="图片预览">
+					<h6>2017/1/7</h6>
+					<h4>胸外科手术</h4>
+					<p>手术主刀医生：李启明教授。主要内容：以卵圆窝为中点作一与腹股沟韧带平行的斜切口，长约6cm。切开皮肤、皮下组织、浅筋膜，显露卵</p>
+				</div>	
+				<div class="video_ele">
+					<img src="./src/videoSrc.jpg" alt="图片预览">
+					<h6>2017/1/7</h6>
+					<h4>胸外科手术</h4>
+					<p>手术主刀医生：李启明教授。主要内容：以卵圆窝为中点作一与腹股沟韧带平行的斜切口，长约6cm。切开皮肤、皮下组织、浅筋膜，显露卵</p>
+				</div>
+				<div class="video_ele">
+					<img src="./src/videoSrc.jpg" alt="图片预览">
+					<h6>2017/1/7</h6>
+					<h4>胸外科手术</h4>
+					<p>手术主刀医生：李启明教授。主要内容：以卵圆窝为中点作一与腹股沟韧带平行的斜切口，长约6cm。切开皮肤、皮下组织、浅筋膜，显露卵</p>
+				</div>
+				<div class="video_ele">
+					<img src="./src/videoSrc.jpg" alt="图片预览">
+					<h6>2017/1/7</h6>
+					<h4>胸外科手术</h4>
+					<p>手术主刀医生：李启明教授。主要内容：以卵圆窝为中点作一与腹股沟韧带平行的斜切口，长约6cm。切开皮肤、皮下组织、浅筋膜，显露卵</p>
+				</div>
+				<div class="video_ele">
+					<img src="./src/videoSrc.jpg" alt="图片预览">
+					<h6>2017/1/7</h6>
+					<h4>胸外科手术</h4>
+					<p>手术主刀医生：李启明教授。主要内容：以卵圆窝为中点作一与腹股沟韧带平行的斜切口，长约6cm。切开皮肤、皮下组织、浅筋膜，显露卵</p>
+				</div>
+				<div class="video_ele">
+					<img src="./src/videoSrc.jpg" alt="图片预览">
+					<h6>2017/1/7</h6>
+					<h4>胸外科手术</h4>
+					<p>手术主刀医生：李启明教授。主要内容：以卵圆窝为中点作一与腹股沟韧带平行的斜切口，长约6cm。切开皮肤、皮下组织、浅筋膜，显露卵点作一与腹股沟韧带平行的斜切口，长约6cm。切开皮肤、皮下组织、浅筋膜，显露卵</p>
+				</div>
+				<div class="video_ele">
+					<img src="./src/videoSrc.jpg" alt="图片预览">
+					<h6>2017/1/7</h6>
+					<h4>胸外科手术</h4>
+					<p>手术主刀医生：李启明教授。主要内容：以卵圆窝为中点作一与腹股沟韧带平行</p>
+				</div>
+				
+			</div>
+			<div class="loadMore">加载更多</div>
+		</div>
 	<!-- footer 尾部 -->
 	<footer>Copyright &copy 深圳亿维锐创科技股份有限公司</footer>
 </body>
