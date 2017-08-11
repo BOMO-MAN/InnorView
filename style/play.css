@@ -41,11 +41,7 @@ figcaption {
 	padding: 20px 20px 40px 20px  ;
 /*	background: gray;*/
 }
-.videoSrc h3,
-.personMsg h3,
-.opsMsg h3,
-.opsDownload h3,
-.question h3 {
+.videoSrc h3 {
 	width: 110px;
 	font-size: 24px ;
 	letter-spacing: 3px ; 
@@ -188,6 +184,26 @@ figcaption {
 .personMsg {
 	background: white;
 	height: 320px;
+}
+.personMsg h3,
+.opsMsg h3,
+.opsDownload h3,
+.question h3 {
+	width: 110px;
+	font-size: 24px ;
+	letter-spacing: 3px ; 
+	padding-bottom: 12px;
+	padding-width: 100px;
+	border-bottom: 2px solid #07c5c5;
+	margin-bottom: 24px;
+
+}
+.personMsg p,
+.opsMsg p {
+	font-size: 18px;
+	margin: 6px 0;
+	letter-spacing: 2px;
+	line-height: 1.6em;
 }
 
 
