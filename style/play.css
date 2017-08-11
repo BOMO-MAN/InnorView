@@ -41,7 +41,11 @@ figcaption {
 	padding: 20px 20px 40px 20px  ;
 /*	background: gray;*/
 }
-.videoSrc h3 {
+.videoSrc h3,
+.personMsg h3,
+.opsMsg h3,
+.opsDownload h3,
+.question h3 {
 	width: 110px;
 	font-size: 24px ;
 	letter-spacing: 3px ; 
@@ -102,7 +106,7 @@ figcaption {
 	height: 280px;
 	border: 1px solid gray;
 	float: left;
-	margin-right: 30px;
+	margin-right: 28px;
 	margin-top: 20px;
 	border-radius: 2px;
 	padding: 4px ;
@@ -159,4 +163,31 @@ figcaption {
 	color: white;
 	cursor: pointer;
 }
+
+/* 视频播放下方简介*/
+.video_resume {
+/*	border: 2px solid blue;*/
+	float: left;
+	margin-top: 180px;
+	margin-left: 50%;
+	position: relative;
+	left: -400px;
+
+}
+.personMsg,
+.opsMsg,
+.opsDownload,
+.question {
+	width: 800px;
+	border: 1px solid #c9cacb;
+	background: white;
+	border-radius: 2px;
+	margin-top: 20px;
+	padding: 20px 40px;
+}
+.personMsg {
+	background: white;
+	height: 320px;
+}
+
 
