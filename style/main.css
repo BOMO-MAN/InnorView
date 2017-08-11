@@ -86,6 +86,8 @@ header .nav ul li {
 	height: 538px;
 }
 #container .left  .video_header {
+	float: left;
+	width: 540px;
 	margin: 10px 0;
 	padding-bottom: 10px;
 }
@@ -121,8 +123,26 @@ header .nav ul li {
 	z-index: 99;
 	background: url(../src/close.png) no-repeat ;
 }
+/*手术室直播厅选项*/
+.ops {
+	padding-left: 24px;
+	float: right;
+	width: 280px;
+/*	border: 1px solid red;*/
+}
 
+.opsSelect ul li {
+	font-size: 12px;
+	float: left;
+	padding: 4px 6px;
+	margin: 10px 10px 0 10px;
+	border: 2px solid #d5d5d5;
+	border-radius: 4px;
+}
 /*通道切换按钮*/
+.btn {
+	padding-top: 10px;
+}
 .passageway {
 	width: 100%;
 /*	border: 1px solid red;*/

@@ -2,17 +2,116 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>亿维医疗直播系统</title>
+	<title>点播界面</title>
+	<link rel="stylesheet" href="./style/reset.css">
+	<link rel="stylesheet" href="./style/main.css">
 </head>
 <body>
 	<!-- header 头部 -->
-	<header>1</header>
-	
-	<!-- content 内容 -->
-	<div>2</div>
+	<header>
+		<div id="head" class="clearfix">
+			<img class="logo" src="./src/logo.png" alt="logo">
+			<div class="img">
+				<img src="./src/icon.jpg" alt="">
+			</div>
+			<div class="nav">
+				<ul>
+					<li class="active"><a href="index.html">直播</a></li>
+					<li><a href="play.html">点播</a></li>
+					<li><a href="login.html">登录</a></li>
+				</ul>
+			</div>
 
+		</div>
+	</header>
+	<!-- content 内容 -->
+	<div id="container" class="clearfix">
+		<!-- left 视频窗口和下方的视频通道以及分屏功能 -->
+		<div class="left">
+			<!-- 窗口部分 -->
+			<div class="video_container">
+				<div class="video_header">
+					<img src="./src/doctor.jpg" alt="头像">
+					<div class="text">
+						<h3><span>直播：</span>张启明教授胸外科手术</h3>
+						<h4>拥有30多年临床经验，有丰富的胸外科手术经验</h4>
+					</div>
+				</div>
+				<div class="video" >
+					<video src="../src/test.mp4" width="916" height="528" controls ></video>
+				</div>
+				<span class="open_btn"></span>
+			</div>
+			<!-- 按钮 -->
+			<div class="btn ">
+				<div class="passageway clearfix">
+					<ul>
+						<li class="passagewayBtn passSelect"><a href="#">腔镜视频</a></li>
+						<li class="passagewayBtn passSelect"><a href="#">腔镜视频</a></li>
+						<li class="passagewayBtn passSelect"><a href="#">腔镜视频</a></li>
+						<li class="passagewayBtn passSelect"><a href="#">腔镜视频</a></li>
+						<li class="passagewayBtn passSelect"><a href="#">腔镜视频</a></li>
+						<li class="passagewayBtn passSelect"><a href="#">腔镜视频</a></li>
+						<li class="passagewayBtn passSelect"><a href="#">腔镜视频</a></li>
+						<li class="passagewayBtn passSelect"><a href="#">腔镜视频</a></li>
+					</ul>
+				</div>
+				<div class="splitScreen">
+					<img src="./src/1.jpg" alt="icon">
+					<img src="./src/2.jpg" alt="icon">
+					<img src="./src/3.jpg" alt="icon">
+					<img src="./src/4.jpg" alt="icon">
+					<img src="./src/5.jpg" alt="icon">
+					<img src="./src/6.jpg" alt="icon">
+					<img src="./src/7.jpg" alt="icon">
+					<img class="screenSelect" src="./src/8.jpg" alt="icon">
+				</div>
+			</div>
+		</div>
+		<!-- right 侧边栏部分 -->
+		<div class="right">
+			<!-- 手术简介和下载部分 -->
+			<div class="download">
+				<div class=" clearfix">
+					<ul>
+						<li class="changeBtn activeBtn">手术简介</li>
+						<li class="changeBtn">文件下载</li>
+					</ul>
+				</div>
+				<div class="doctor">
+					<p>手术医生：<span class="name">张启明教授</span></p>
+					<p>手术日期：<span class="date">2016/2/7</span></p>
+					<p>手术科室：<span class="address">8楼1002室</span></p>
+					<p>手术名称：<span class="operation">胸外科手术</span></p>
+				</div>
+				<div class="download_list">
+					<ul>
+						<li>1111<button>下载</button></li>
+						<li>1111<button>下载</button></li>
+						<li>1111<button>下载</button></li>
+						<li>1111<button>下载</button></li>
+						<li>1111<button>下载</button></li>
+						<li>1111<button>下载</button></li>
+				</div>
+			</div>
+			<!-- 互动 -->
+			<div class="msg">
+				<div class="sendMsg">
+					<ul>
+						<li><span>admin:</span>第一版本上线了</li>
+						<li><span>admin:</span>第一版本上线了</li>
+						<li><span>admin:</span>第一版本上线了</li>
+						<li><span>admin:</span>第一版本上线了</li>
+						<li><span>admin:</span>第一版本上线了</li>
+					</ul>
+				</div>
+				<div class="inputMsg">
+					<input type="text" placeholder="输入你的问题..."><button class="radio">语音</button><button class="send">发送</button>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- footer 尾部 -->
-	<footer>3</footer>
-		
+	<footer>Copyright &copy 深圳亿维锐创科技股份有限公司</footer>
 </body>
 </html>
