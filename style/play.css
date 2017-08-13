@@ -36,7 +36,7 @@ figcaption {
 	top: 160px;
 	clear: both;
 	width: 100%;
-	border: 1px solid #c8c9c9;
+/*	border: 1px solid #c8c9c9;*/
 	border-radius: 4px;
 	padding: 20px 20px 40px 20px  ;
 /*	background: gray;*/
@@ -71,6 +71,10 @@ figcaption {
 	background: rgba(0,0,0,0.27);
 	color: white;
 	border: 2px solid white;
+}
+.tag_two li {
+	color: black;
+	cursor: pointer;
 }
 /*二级菜单*/
 .tag_two {
@@ -131,14 +135,11 @@ figcaption {
   text-overflow: ellipsis;
 }
 /* 鼠标移入展示conver*/
-.video_cover {
-	display: block;
-	position: absolute;
-	width: 270px;
-	height: 154px;
-	background: url(../src/videoSrcCover.png);
+.video_ele .mask {
+	position: relative;
+	top: -267px;
+	z-index: 99;
 }
-
 /* 加载更多*/
 .loadMore {
 	color: #333333;
@@ -183,7 +184,6 @@ figcaption {
 }
 .personMsg {
 	background: white;
-	height: 320px;
 }
 .personMsg h3,
 .opsMsg h3,
@@ -200,10 +200,125 @@ figcaption {
 }
 .personMsg p,
 .opsMsg p {
-	font-size: 18px;
+	font-size: 16px;
 	margin: 6px 0;
 	letter-spacing: 2px;
 	line-height: 1.6em;
 }
+/* 患者信息以及手术简介*/
+.input_text1 {
+	font-size: 16px;
+	margin-left: 58px;
+	position: relative;
+	top: -30px;
 
+}
+.input_text2 {
+	font-size: 16px;
+	margin-left: 88px;
+	position: relative;
+	top: -30px;
+}
 
+/* 文件下载*/
+.opsDownload ul {
+	height: 280px;
+	overflow-y: auto;
+	border: 1px solid #d5d5d5;
+}
+.opsDownload ul li {
+	line-height: 48px;
+	padding-left: 12px;
+}
+/* 隔行变色*/
+.opsDownload ul li:nth-child(2n) {
+	background: #f2f2f2;
+}
+/* hover 状态*/
+.opsDownload ul li a:hover {
+	color: red;
+}
+
+/* 评论区域*/
+.question {
+	margin-bottom: 40px;
+
+}
+.write form textarea {
+	padding: 10px 15px;
+	width: 100%;
+	height: 80px;
+	font-size: 16px;
+	border: 1px solid #dcdcdc;
+	border-radius: 4px;
+	background-color: hsla(0,0%,71%,.1);
+	resize: none;
+	display: inline-block;
+	vertical-align: top;
+	outline-style: none;
+}
+.Q_send a {
+	text-align: center;
+	color: white !important;
+	float: right;
+	width: 78px;
+	margin: 10px 0;
+	padding: 8px 18px;
+	font-size: 16px;
+	border: none;
+	border-radius: 20px;
+	background-color: #42c02e;
+	cursor: pointer;
+	outline: none;
+	display: block;
+}
+.Q_send a:hover {
+	opacity: .8;
+}
+
+.comment {
+	border-top: 1px solid #d5d5d5;
+	margin-top: 40px;
+	padding: 20px 0;
+}
+/* 评论数字*/
+.top {
+	clear: both;
+	padding-top: 40px;
+}
+.sort,
+.reverse {
+	float: right;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+/*  提问者相关信息*/
+ /* 头像*/
+.info img {
+	float: left;
+	width: 60px;
+	height: 60px;
+	border: 2px solid  #07c5c5 ;
+	border-radius: 30px;
+}
+.autor h5 {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	font-size: 16px;
+	text-indent: 14px;
+}
+.autor p {
+	text-indent: 14px;
+	color: #999999;
+}
+.autor p a{
+	margin-right: 20px;
+	color: #999999 !important;
+}
+
+/* 内容区域*/
+.wrap {
+	clear: both;
+	margin-top: 20px;
+}
