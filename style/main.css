@@ -87,6 +87,7 @@ header .nav ul li {
 	position: relative;
 	width: 928px;
 	height: 538px;
+	border: 1px solid #d5d5d5;
 }
 #container .left  .video_header {
 	float: left;

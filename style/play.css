@@ -66,6 +66,7 @@ figcaption {
 	padding: 6px 16px;
 	border: 1px solid #c9c9c9;
 	border-radius: 20px;
+	cursor: pointer;
 }
 .tagActive {
 	background: rgba(0,0,0,0.27);
