@@ -72,8 +72,18 @@
 				</div>
 				<!-- 音频选择 文件选择 -->
 				<div class="radioSelectAll">
-					<p class="radioSelect"><span>音频：</span> <a class="mute">静音</a> <a class="all radioSelectActive ">全部</a> </p>
-					<p class="file"> <span>文件流：</span><a class="live radioSelectActive">live </a> <a class="vod">vod</a></p>
+					<form>
+						<select name="radioSelect">
+							<option value="volvo">音频：全部</option>
+							<option value="saab">音频：静音</option>
+						</select>
+					</form>
+					<form>
+						<select name="file">
+							<option value="volvo">live</option>
+							<option value="saab">vod</option>
+						</select>
+					</form>
 				</div>
 				<div class="splitScreen">
 					<img src="./src/1.jpg" alt="icon">
@@ -142,7 +152,9 @@
 					</ul>
 				</div>
 				<div class="inputMsg">
-					<input type="text" placeholder="输入你的问题..."><button class="radio">语音</button><button class="send">发送</button>
+					<input type="text" placeholder="输入你的问题...">
+				<!-- 	<button class="radio">语音</button> -->
+					<button class="send">发送</button>
 				</div>
 			</div>
 		</div>

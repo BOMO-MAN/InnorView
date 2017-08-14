@@ -180,18 +180,20 @@ header .nav ul li {
 .radioSelectAll {
 	float: right;
 	position: relative;
-	top: -76px;
-	left: -10px;
+	left: -20px;
 }
-.radioSelectAll p {
-	margin-top:  10px;
+.radioSelectAll form {
+	margin-top: 10px;
+	float: left;
+	margin-right: 10px;
 }
-.radioSelectAll p a {
-	cursor: pointer;
+.radioSelectAll form select {
+	height: 36px;
+	font-size: 14px;
+	// width: 98.8px;
 }
-.radioSelectActive {
-	color: #ff6666;
-}
+
+
 
 /* 视频通道选中*/
 .passSelect {
@@ -299,6 +301,7 @@ header .nav ul li {
 	padding: 40px 0 0 40px;
 }
 .inputMsg input {
+	width: 200px;
 	line-height: 34px;
 	border-radius: 4px 0 0 4px;
 	border: 1px solid #d5d5d5;

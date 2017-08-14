@@ -11,6 +11,7 @@ body {
 }
 h2 {
 	text-align: center;
+	font-weight: bold;
 	font-size: 36px;
 	padding-top: 320px;
 }
@@ -31,15 +32,7 @@ button {
 	border-radius: 4px;
 	border: 1px solid #d5d5d5;
 }
-.number {
-	width: 200px;
-	height: 60px;
-	margin-top: 24px;
-	position: relative;
-	left: -100px;
-	font-size: 24px;
-	padding-left: 12px;
-}
+
 button {
 	width: 400px;
 	line-height: 60px;
