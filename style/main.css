@@ -160,7 +160,7 @@ header .nav ul li {
 	padding-top: 10px;
 }
 .passageway {
-	width: 100%;
+	width: 818px;
 /*	border: 1px solid red;*/
 	margin: 20px 0 16px 0;
 }
@@ -176,6 +176,23 @@ header .nav ul li {
 	margin-right: 14px;
 	margin-top: 10px;
 }
+/* 音频选择 文件选择*/
+.radioSelectAll {
+	float: right;
+	position: relative;
+	top: -76px;
+	left: -10px;
+}
+.radioSelectAll p {
+	margin-top:  10px;
+}
+.radioSelectAll p a {
+	cursor: pointer;
+}
+.radioSelectActive {
+	color: #ff6666;
+}
+
 /* 视频通道选中*/
 .passSelect {
 	/*background: #07c5c5;*/

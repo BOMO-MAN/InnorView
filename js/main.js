@@ -87,6 +87,23 @@ $(document).ready(function($) {
 		$(this).find('.mask').hide();							
 	});
 
+	//  文件流 音频选择函数
+	$('.radioSelect').children('a').click(function(event) {
+		/* Act on the event */
+		var e = event.target;
+		console.log(e)
+		$(e).siblings().removeClass('radioSelectActive');
+		$(e).addClass('radioSelectActive')
+	});
+
+	$('.file').children('a').click(function(event) {
+	/* Act on the event */
+	var e = event.target;
+	console.log(e)
+	$(e).siblings().removeClass('radioSelectActive');
+	$(e).addClass('radioSelectActive')
+	});
+
 
 
 
