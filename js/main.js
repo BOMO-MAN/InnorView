@@ -1,4 +1,41 @@
 $(document).ready(function($) {
+	// 模拟点击登录窗口
+	$('.login').click(function(event) {
+		/* Act on the event */
+		$('.modalBg').show()
+	});
+
+	//  直播情况下切换手术室(点击)
+	$('.ops_btn').click(function(event) {
+		/* Act on the event */
+		$('.modalBg').fadeIn('slow/400/fast', function() {
+			
+		});
+	});
+		// 关闭
+	$('.closeBtn').click(function(event) {
+		/* Act on the event */
+		$('.modalBg').fadeOut('slow/400/fast', function() {
+			
+		});
+	});	
+	//  模态框 移入遮罩
+	$('.modal_ele').mouseenter(function(event) {
+	/* Act on the event */
+		$(this).find('.modalMask').show();							
+	});
+	$('.modal_ele').mouseleave(function(event) {
+		/* Act on the event */
+		$(this).find('.modalMask').hide();							
+	});
+
+
+	$('.systemSelect').find('span').click(function(event) {
+		/* Act on the event */
+		var e = event.target;
+		$(this).siblings().removeClass('systemActive');
+		$(this).addClass('systemActive');
+	});
 	// 直播窗口展开、收起函数
 	$('.box_btn').click(function() {
 		if($(this).hasClass('close_btn')){
@@ -75,7 +112,6 @@ $(document).ready(function($) {
 
 	});
 
-
 	//  视频播放移入mask
 	$('.video_ele').mouseenter(function(event) {
 		/* Act on the event */
@@ -86,25 +122,5 @@ $(document).ready(function($) {
 		/* Act on the event */
 		$(this).find('.mask').hide();							
 	});
-
-	//  文件流 音频选择函数
-	$('.radioSelect').children('a').click(function(event) {
-		/* Act on the event */
-		var e = event.target;
-		console.log(e)
-		$(e).siblings().removeClass('radioSelectActive');
-		$(e).addClass('radioSelectActive')
-	});
-
-	$('.file').children('a').click(function(event) {
-	/* Act on the event */
-	var e = event.target;
-	console.log(e)
-	$(e).siblings().removeClass('radioSelectActive');
-	$(e).addClass('radioSelectActive')
-	});
-
-
-
 
 });

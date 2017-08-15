@@ -58,7 +58,7 @@ header .nav ul li {
 	margin-top: 8px;
 	line-height: 36px;
 	width: 88px;
-	margin-right: 20px;
+	margin-right: -40px;
 	text-align: center;
 /*	background: gray;*/
 }
@@ -123,7 +123,7 @@ header .nav ul li {
 	width: 10px;
 	height: 80px;
 	position: absolute;
-	right: -8px;
+	right: -10px;
 	top: 240px;
 	z-index: 99;
 	background: url(../src/close.png) no-repeat ;
@@ -133,28 +133,36 @@ header .nav ul li {
 	width: 10px;
 	height: 80px;
 	position: absolute;
-	right: 8px;
+	right: 0px;
 	top: 240px;
 	z-index: 99;
 	background: url(../src/open.png) no-repeat ;
 	cursor: pointer;
 }
 /*手术室直播厅选项*/
-.ops {
-	padding-left: 24px;
-	float: right;
-	width: 280px;
-/*	border: 1px solid red;*/
-}
-
-.opsSelect ul li {
-	font-size: 12px;
-	float: left;
-	padding: 4px 6px;
-	margin: 10px 10px 0 10px;
-	border: 2px solid #d5d5d5;
-	border-radius: 4px;
-}
+	.ops {
+		float: right;
+		width: 100px;
+		margin-top: 14px;
+		margin-right: 12px;
+	}
+	.ops button {
+		width: 100%;
+		height: 100%;
+		line-height: 36px;
+		font-size: 18px;
+		text-align: center;
+		color: #999;
+		border: 1px solid #d5d5d5;
+		border-radius: 20px;
+		cursor: pointer;
+		letter-spacing: 2px;
+	}
+	.ops button:active {
+		background: #07c5c5;
+		color: white;
+		opacity: .8;
+	}
 /*通道切换按钮*/
 .btn {
 	padding-top: 10px;
@@ -327,6 +335,88 @@ header .nav ul li {
 .send:active {
 	border-style: none;
 	opacity: 0.5;
+}
+
+/* 模态框 弹出*/
+.modalBg {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.5);
+	z-index: 9999;
+}
+
+/* 直播途中  打开会有关闭按钮*/
+.closeBtn {
+	float: right;
+	width: 30px;
+	height: 30px;
+	margin-top: 10px;
+	margin-right: 10px;
+	background: url(../src/closeBtn.png) no-repeat center center;
+	cursor: pointer;
+}
+.modalBox {
+	width: 600px;
+	height: 600px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -300px;
+	margin-left: -330px;
+	background: white;
+	border: 1px solid #ffffff;
+	border-radius: 4px;
+}
+.modalBox h3 {
+	font-size: 18px;
+	margin-top: 10px;
+	margin-left: 20px;
+	padding-bottom: 20px;
+	background: url(../src/line.png) no-repeat 0 30px ;
+}
+.modalContainer {
+	border: 1px solid #d5d5d5;
+	margin: 0 20px;
+	margin-top: 10px;
+	height: 522px;
+	overflow-y: auto;
+}
+.modalContainer ul {
+	margin-left: 24px;
+}
+.modalContainer ul li {
+	width: 150px;
+	height: 150px;
+	float: left;
+	margin-right: 20px;
+/*	border: 1px solid;*/
+	margin-top: 18px;
+
+}
+.modalContainer ul li a {
+	position: relative;
+}
+.modalContainer ul li img {
+	padding: 2px 1px;
+	border: 1px solid; 
+	border-radius: 1px;
+}
+.address {
+	font-size: 18px;
+}
+.modalInfo {
+	font-size: 12px;
+	margin-top: 6px;
+}
+/*遮罩*/
+.modalMask {
+	width: 100%;
+	position: absolute;
+	height: 86px;
+	background: url(../src/modalMask.png);
 }
 
 

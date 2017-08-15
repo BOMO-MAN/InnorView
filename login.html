@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>登录页面</title>
 	<link rel="stylesheet" href="style/reset.css">
+	<link rel="stylesheet" href="style/main.css">
 	<link rel="stylesheet" href="style/login.css">
 </head>
 <body>
@@ -11,9 +12,98 @@
 	<form action="#">
 		<input class="name" type="text" placeholder="Name:">
 		<input class="password" type="password" placeholder="Password:">
-		<button src="index.html">登录</button>
+		<p class="system">请选择要进入的系统：</p>
+		<div class="systemSelect">
+			<span class="live systemActive">直播</span>
+			<span class="history">点播</span>
+		</div>
+		<button class="login" src="index.html">登录</button>
 	</form>	
+	<div class="modalBg" style="display: none;">
+		<div class="modalBox">
+			<h3>现正直播手术：</h3>
+			<div class="modalContainer">
+				<ul class="clearfix">
+					<li class="modal_ele">
+						<a href="index.html" >
+							<div class="modalMask" style="display: none;"></div>
+							<img src="./src/modal.jpg" alt="">
+							<h4 class="address">手术①室</h4>
+							<p class="modalInfo">张启明主刀《胸外科手术》</p>
+						</a>
+					</li>
+					<li class="modal_ele">
+						<a href="index.html" >
+							<div class="modalMask" style="display: none;"></div>
+							<img src="./src/modal.jpg" alt="">
+							<h4 class="address">手术①室</h4>
+							<p class="modalInfo">张启明主刀《胸外科手术》</p>
+						</a>
+					</li>
+					<li class="modal_ele">
+						<a href="index.html" >
+							<div class="modalMask" style="display: none;"></div>
+							<img src="./src/modal.jpg" alt="">
+							<h4 class="address">手术①室</h4>
+							<p class="modalInfo">张启明主刀《胸外科手术》</p>
+						</a>
+					</li>
+					<li class="modal_ele">
+						<a href="index.html" >
+							<div class="modalMask" style="display: none;"></div>
+							<img src="./src/modal.jpg" alt="">
+							<h4 class="address">手术①室</h4>
+							<p class="modalInfo">张启明主刀《胸外科手术》</p>
+						</a>
+					</li>
+					<li class="modal_ele">
+						<a href="index.html" >
+							<div class="modalMask" style="display: none;"></div>
+							<img src="./src/modal.jpg" alt="">
+							<h4 class="address">手术①室</h4>
+							<p class="modalInfo">张启明主刀《胸外科手术》</p>
+						</a>
+					</li>
+					<li class="modal_ele">
+						<a href="index.html" >
+							<div class="modalMask" style="display: none;"></div>
+							<img src="./src/modal.jpg" alt="">
+							<h4 class="address">手术①室</h4>
+							<p class="modalInfo">张启明主刀《胸外科手术》</p>
+						</a>
+					</li>
+					<li class="modal_ele">
+						<a href="index.html" >
+							<div class="modalMask" style="display: none;"></div>
+							<img src="./src/modal.jpg" alt="">
+							<h4 class="address">手术①室</h4>
+							<p class="modalInfo">张启明主刀《胸外科手术》</p>
+						</a>
+					</li>
+					<li class="modal_ele">
+						<a href="index.html" >
+							<div class="modalMask" style="display: none;"></div>
+							<img src="./src/modal.jpg" alt="">
+							<h4 class="address">手术①室</h4>
+							<p class="modalInfo">张启明主刀《胸外科手术》</p>
+						</a>
+					</li>
+					<li class="modal_ele">
+						<a href="index.html" >
+							<div class="modalMask" style="display: none;"></div>
+							<img src="./src/modal.jpg" alt="">
+							<h4 class="address">手术①室</h4>
+							<p class="modalInfo">张启明主刀《胸外科手术》</p>
+						</a>
+					</li>
+				</ul>
+			</div>	
+		</div>
+	</div>
 	<!-- footer 尾部 -->
 	<footer>Copyright &copy 深圳亿维锐创科技股份有限公司</footer>	
+
+	<script src="./js/jquery-3.2.1.js"></script>
+	<script src="./js/main.js"></script>
 </body>
 </html>
