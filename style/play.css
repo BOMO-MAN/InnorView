@@ -30,10 +30,137 @@ figcaption {
 	opacity: 0.2;
 }
 
+/*banner*/
+/*轮播图*/
+	.img-ct img {
+		width: 920px;
+		height: 600px;
+	}
+	.carousel {
+		width: 920px;
+		height: 606px;
+		position: relative;
+		overflow: hidden;
+		float: left;
+/*		margin: 0 auto;*/
+		border: 1px solid #07c5c5;
+		box-shadow: 0 1px 10px #07c5c5;
+	}
+	.img-ct {
+		/*width: 6320px;   // 这个宽度不能写死 要用js进行计算  */  
+		position: absolute;
+	}
+	.img-ct li {
+		float: left;
+		position: relative;
+		/*opacity: 0;*/
+	}
+	/* 标题*/
+	.img-ct li a h5 {
+		width: 920px;
+		/*position: absolute;*/
+		top: 0;
+		font-size: 24px;
+		line-height: 24px;
+		color: #333;
+		padding: 10px 0 10px 16px;
+		background: rgba(255,255,255,0.8);
+	}
+
+	/*按钮*/
+	.arrow {
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+		border-radius: 20px;
+		border: 1px solid #fff;
+		z-index: 10;
+		position: absolute;
+		top: 50%;
+		text-decoration: none;
+		color: #ffffff;
+		line-height: 40px;
+		text-align: center;
+	}
+	.next {
+		right: 10px;
+	}
+	.prev {
+		left: 10px;
+	}
+	.arrow:hover {
+		cursor: pointer;
+		background-color: rgba(0,0,0,0.1);
+	}
+	.arrow:active {
+		background-color: rgba(0,0,0,0.3);
+	}
+	/*显示小圆点*/
+	.dot {
+		z-index: 10;
+		/*width: 400px;*/
+		position: absolute;
+		bottom: 10px;
+		left: 50%;
+		margin-left: -144px;
+		background-color: rgba(255,255,255,0.3); 
+		border-radius: 15px;
+		text-align: center;
+		/*padding: 4px;*/
+
+
+	}
+	.dot li {
+		float: left;
+		display: block;
+		width: 16px;
+		height: 16px;
+		border-radius: 8px;
+		background-color: #ffffff;
+		margin: 4px 10px;
+
+		
+	}
+	.dot .active {
+		background: #07c5c5;
+	}
+
+
+/* 右侧经典视频*/
+.videoRight {
+	width: 380px;
+	height: 600px;
+/*	border: 1px solid;*/
+	float: right
+}
+.videoRight a {
+	position: relative;
+}
+.videoRight a img {
+	width: 380px;
+	height: 200px;
+}
+.videoRight a p {
+	position: absolute;
+	width: 380px;
+	bottom: 4px;
+	font-size: 18px;
+	line-height: 22px;
+	padding: 4px 8px;
+	background: rgba(255,255,255,0.8);
+}
+.videoRightMask {
+	width: 380px;
+	height: 200px;
+	background: url(../src/video/mask.png);
+	box-shadow: 0 2px 4px #07c5c5;
+	position: absolute;
+	bottom: 4px;
+}
 /*视频内容*/
 .videoSrc {
 	position: relative;
-	top: 160px;
+	top: 20px;
 	clear: both;
 	width: 100%;
 /*	border: 1px solid #c8c9c9;*/
@@ -53,12 +180,25 @@ figcaption {
 	position: absolute;
 	left: 160px;
 	top: 24px;
-	width: 120px;
+	width: 140px;
 	border-style: none;
 	border: 1px solid #333333;
 	border-radius: 24px;
 	padding: 6px 26px 6px 16px;
 }
+/* 搜索按钮*/
+.searchIcon {
+	position: absolute;
+	left: 268px;
+	top: 28px;
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background: url(../src/search.png);
+	cursor: pointer;
+}
+
+
 .tag>ul>li {
 	float: left;
 	margin-top: 20px;
@@ -111,6 +251,7 @@ figcaption {
 	margin-top: 20px;
 	border-radius: 2px;
 	padding: 4px ;
+	box-shadow: 0 0.3px 2px #07c5c5;
 
 }
 .video_ele h6{

@@ -17,82 +17,111 @@
 			</div>
 			<div class="nav">
 				<ul>
-					<li><a href="index.html">直播</a></li>
-					<li class="active"><a href="play.html">点播</a></li>
-					<li><a href="login.html">登录</a></li>
+<!-- 					<li><a href="index.html">直播</a></li>
+					<li class="active"><a href="play.html">点播</a></li> -->
+					<li><a href="login.html">退出</a></li>
 				</ul>
 			</div>
 
 		</div>
 	</header>
 	<!-- content 内容 -->
-	<div id="container" class="clearfix">
-		<!-- left 视频窗口和下方的视频通道以及分屏功能 -->
-		<div class="left">
-			<!-- 窗口部分 -->
-			<div class="video_container">
-				<div class="video_header">
-					<img src="./src/doctor.jpg" alt="头像">
-					<div class="text">
-						<h3><span>直播：</span>张启明教授胸外科手术</h3>
-						<h4>拥有30多年临床经验，有丰富的胸外科手术经验</h4>
-					</div>
-				</div>
-				<div class="video" >
-					<video src="../src/test.mp4" width="916" height="528" controls ></video>
-				</div>
-			</div>
-			<!-- 按钮 -->
-			<div class="btn ">
-				<div class="passageway clearfix">
-					<ul>
-						<li class="passagewayBtn passSelect"><a href="#">腔镜视频</a></li>
-						<li class="passagewayBtn passSelect"><a href="#">腔镜视频</a></li>
-						<li class="passagewayBtn passSelect"><a href="#">腔镜视频</a></li>
-						<li class="passagewayBtn passSelect"><a href="#">腔镜视频</a></li>
-						<li class="passagewayBtn passSelect"><a href="#">腔镜视频</a></li>
-						<li class="passagewayBtn passSelect"><a href="#">腔镜视频</a></li>
-						<li class="passagewayBtn passSelect"><a href="#">腔镜视频</a></li>
-						<li class="passagewayBtn passSelect"><a href="#">腔镜视频</a></li>
-					</ul>
-				</div>
-				<div class="splitScreen">
-					<img src="./src/1.jpg" alt="icon">
-					<img src="./src/2.jpg" alt="icon">
-					<img src="./src/3.jpg" alt="icon">
-					<img src="./src/4.jpg" alt="icon">
-					<img src="./src/5.jpg" alt="icon">
-					<img src="./src/6.jpg" alt="icon">
-					<img src="./src/7.jpg" alt="icon">
-					<img class="screenSelect" src="./src/8.jpg" alt="icon">
-				</div>
-			</div>
+	<div id="container" class="clearfix ">
+		<!--  轮播图 -->
+		<div class="carousel clearfix banner">
+			<ul class="img-ct clearfix" >
+				<li data-id="1">
+					<a href="#">
+						<h5 class="">张启明教授主刀：胸外科手术</h5>
+						<img src="src/banner/1.jpg" 	alt="picture">
+					</a>
+				</li>
+				<li data-id="2">
+					<a href="#">
+						<h5 class="">李三三主刀：普外科手术</h5>
+						<img src="src/banner/2.jpg" 	alt="picture">
+					</a>
+				</li>
+				<li data-id="3">
+					<a href="#">
+						<h5 class="">国外专家主刀：肺移植手术</h5>
+						<img src="src/banner/3.jpg" 	alt="picture">
+					</a>
+				</li>
+				<li data-id="4">
+					<a href="#">
+						<h5 class="">王五教授：肝移植手术</h5>
+						<img src="src/banner/4.jpg" 	alt="picture">
+					</a>
+				</li>
+				<li data-id="5">
+					<a href="#">
+						<h5 class="">李恒： 微创手术</h5>
+						<img src="src/banner/5.jpg" 	alt="picture">
+					</a>
+				</li>
+				<li data-id="6">
+					<a href="#">
+						<h5 class="">林涛主刀：阑尾切除术</h5>
+						<img src="src/banner/6.jpg" 	alt="picture">
+					</a>
+				</li>
+				<li data-id="7">
+					<a href="#">
+						<h5 class="">陶明：肝切除术</h5>
+						<img src="src/banner/7.jpg" 	alt="picture">
+					</a>
+				</li>
+				<li data-id="8">
+					<a href="#">
+						<h5 class="">林丹：肠造口术</h5>
+						<img src="src/banner/8.jpg" 	alt="picture">
+					</a>
+				</li>
+			</ul>
+			<a class="prev arrow" href="#"><</a>
+			<a class="next arrow" href="#">></a>
+			<ul class="dot clearfix">
+				<li class="active"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
 		</div>
-		<!-- right 侧边栏部分 -->
-		<div class="video_tag">
-			<!-- 	<span><</span> -->
-				<figure>
-					<img class="cover" src="./src/cover.png" alt="cover">
-					<img src="./src/videoTag.jpg" alt="视频标签">
-					<figcaption>手术节点 <span>2'10"</span></figcaption>
-				</figure>
-				<figure >
-					<img class="cover " src="./src/cover.png" alt="cover">
-					<img src="./src/videoTag.jpg" alt="视频标签">
-					<figcaption>手术节点 <span>2'10"</span></figcaption>
-				</figure>
-				<figure>
-					<img class="cover" src="./src/cover.png" alt="cover">
-					<img src="./src/videoTag.jpg" alt="视频标签">
-					<figcaption>手术节点 <span>2'10"</span></figcaption>
-				</figure>
-			<!-- 		<span>></span> -->
+		<!--  右侧经典视频 -->
+		<div class="videoRight">
+			<a href="play.html">
+				<img src="src/video/1.jpg" alt="">
+				<p>张启明医生胸外科手术</p>
+				<!-- <p>播放量： 1800次</p> -->
+				<div class="videoRightMask" style="display: none;"></div>
+			</a>
+			<a href="play.html">
+				<img src="src/video/1.jpg" alt="">
+				<p>张启明医生胸外科手术</p>
+				<!-- <p>播放量： 1800次</p> -->
+				<div class="videoRightMask" style="display: block;"></div>
+			</a>
+			<a href="play.html">
+				<img src="src/video/1.jpg" alt="">
+				<p>张启明医生胸外科手术</p>
+				<!-- <p>播放量： 1800次</p> -->
+				<div class="videoRightMask" style="display: none;"></div>
+			</a>
 		</div>
 
 		<!--  视频库 -->
 		<div class="videoSrc clearfix">
 			<h3>全部视频</h3>
-			<input class="video_input" type="text">
+			<form action="">
+				<input class="video_input" type="text" placeholder="搜索">
+				<i class="searchIcon" href=""></i>
+			</form>
+			
 			<div class="tag">
 				<ul>
 					<li class="tagActive">手术名称
