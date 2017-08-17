@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
 	<title>首页</title>
 	<link rel="stylesheet" href="./style/reset.css">
 	<link rel="stylesheet" href="./style/main.css">
@@ -11,13 +13,13 @@
 	<header>
 		<div id="head" class="clearfix">
 			<img class="logo" src="./src/logo.png" alt="logo">
-			<div class="img">
+<!-- 			<div class="img">
 				<img src="./src/icon.jpg" alt="">
-			</div>
+			</div> -->
 			<div class="nav">
 				<ul>
-					<!-- <li class="active"><a href="#">直播</a></li>
-					<li><a href="play.html">点播</a></li> -->
+					<!-- <li class="active"><a href="#">直播</a></li> -->
+					<li><a href="#">管理员</a></li>
 					<li><a href="login.html">退出</a></li>
 				</ul>
 			</div>
@@ -32,8 +34,8 @@
 				<div class="video_header">
 					<img src="./src/doctor.jpg" alt="头像">
 					<div class="text">
-						<h3><span>直播：</span>张启明教授胸外科手术</h3>
-						<h4>拥有30多年临床经验，有丰富的胸外科手术经验</h4>
+						<h3>直播：<span id="opsName">张启明教授胸外科手术</span></h3>
+						<h4 id="introduction">拥有30多年临床经验，有丰富的胸外科手术经验</h4>
 					</div>
 				</div>
 				<!-- 手术室选择 -->
@@ -43,19 +45,24 @@
 				</div>
 				<span class="box_btn close_btn"></span>
 			</div>
-
 			<!-- 按钮 -->
 			<div class="btn">
 				<div class="passageway clearfix">
 					<ul>
+						<li class="passagewayBtn passSelect"><a Select="tag" href="#">腔镜视频</a></li>
+						<li class="passagewayBtn passSelect"><a Select="tag" href="#">腔镜视频</a></li>
+						<li class="passagewayBtn passSelect"><a Select="tag" href="#">腔镜视频</a></li>
+						<li class="passagewayBtn passSelect"><a Select="tag" href="#">腔镜视频</a></li>
+						<li class="passagewayBtn passSelect"><a Select="tag" href="#">腔镜视频</a></li>
+						<li class="passagewayBtn passSelect"><a Select="tag" href="#">腔镜视频</a></li>
+						<li class="passagewayBtn passSelect"><a Select="tag" href="#">腔镜视频</a></li>
+						<li class="passagewayBtn passSelect"><a Select="tag" href="#">腔镜视频</a></li>
+
+						<!-- <li class="passagewayBtn passSelect"><a href="#">腔镜视频</a></li>
 						<li class="passagewayBtn passSelect"><a href="#">腔镜视频</a></li>
 						<li class="passagewayBtn passSelect"><a href="#">腔镜视频</a></li>
 						<li class="passagewayBtn passSelect"><a href="#">腔镜视频</a></li>
-						<li class="passagewayBtn passSelect"><a href="#">腔镜视频</a></li>
-						<li class="passagewayBtn passSelect"><a href="#">腔镜视频</a></li>
-						<li class="passagewayBtn passSelect"><a href="#">腔镜视频</a></li>
-						<li class="passagewayBtn passSelect"><a href="#">腔镜视频</a></li>
-						<li class="passagewayBtn passSelect"><a href="#">腔镜视频</a></li>
+						<li class="passagewayBtn passSelect"><a href="#">腔镜视频</a></li> -->
 					</ul>
 				</div>
 				<!-- 音频选择 文件选择 -->
@@ -68,8 +75,8 @@
 					</form>
 					<form>
 						<select name="file">
-							<option value="volvo">live</option>
-							<option value="saab">vod</option>
+							<option value="volvo">模式：live</option>
+							<option value="saab">模式：vod</option>
 						</select>
 					</form>
 				</div>
@@ -96,25 +103,26 @@
 					</ul>
 				</div>
 				<div class="doctor" style="display: block;">
-					<p>手术医生：<span class="name">张启明教授</span></p>
-					<p>手术日期：<span class="date">2016/2/7</span></p>
-					<p>手术科室：<span class="area">8楼1002室</span></p>
-					<p>手术名称：<span class="operation">胸外科手术</span></p>
+					<p>手术医生：<span id="docName">张启明教授</span></p>
+					<p>手术日期：<span id="docDate">2016/2/7</span></p>
+					<p>手术科室：<span id="docArea">8楼1002室</span></p>
+					<p>手术名称：<span id="docOperation">胸外科手术</span></p>
 				</div>
 				<div class="download_list" style="display: none;">
 					<ul>
-						<li><a href="#">第三次小组会议诊断报告.jpg</a></li>
-						<li><a href="#">第三次小组会议诊断报告.jpg</a></li>
-						<li><a href="#">第三次小组会议诊断报告.jpg</a></li>
-						<li><a href="#">第三次小组会议诊断报告.jpg</a></li>
-						<li><a href="#">第三次小组会议诊断报告.jpg</a></li>
-						<li><a href="#">第三次小组会议诊断报告.jpg</a></li>
-						<li><a href="#">第三次小组会议诊断报告.jpg</a></li>
-						<li><a href="#">第三次小组会议诊断报告.jpg</a></li>
-						<li><a href="#">第三次小组会议诊断报告.jpg</a></li>
-						<li><a href="#">第三次小组会议诊断报告.jpg</a></li>
-						<li><a href="#">第三次小组会议诊断报告.jpg</a></li>
-						<li><a href="#">第三次小组会议诊断报告.jpg</a></li>
+						<li class="clearfix"><a class="downSrc" href="#">第三次小组会议诊断报告.jpg</a><a class=" downloadMouse downloadBtn" href=""></a></li>
+						<li class="clearfix"><a class="downSrc" href="#">第三次小组会议诊断报告.jpg</a><a class=" downloadMouse downloadBtn" href=""></a></li>
+						<li class="clearfix"><a class="downSrc" href="#">第三次小组会议诊断报告.jpg</a><a class=" downloadMouse downloadBtn" href=""></a></li>
+						<li class="clearfix"><a class="downSrc" href="#">第三次小组会议诊断报告.jpg</a><a class=" downloadMouse downloadBtn" href=""></a></li>
+						<li class="clearfix"><a class="downSrc" href="#">第三次小组会议诊断报告.jpg</a><a class=" downloadMouse downloadBtn" href=""></a></li>
+						<li class="clearfix"><a class="downSrc" href="#">第三次小组会议诊断报告.jpg</a><a class=" downloadMouse downloadBtn" href=""></a></li>
+						<li class="clearfix"><a class="downSrc" href="#">第三次小组会议诊断报告.jpg</a><a class=" downloadMouse downloadBtn" href=""></a></li>
+						<li class="clearfix"><a class="downSrc" href="#">第三次小组会议诊断报告.jpg</a><a class=" downloadMouse downloadBtn" href=""></a></li>
+						<li class="clearfix"><a class="downSrc" href="#">第三次小组会议诊断报告.jpg</a><a class=" downloadMouse downloadBtn" href=""></a></li>
+						<li class="clearfix"><a class="downSrc" href="#">第三次小组会议诊断报告.jpg</a><a class=" downloadMouse downloadBtn" href=""></a></li>
+						<li class="clearfix"><a class="downSrc" href="#">第三次小组会议诊断报告.jpg</a><a class=" downloadMouse downloadBtn" href=""></a></li>
+						<li class="clearfix"><a class="downSrc" href="#">第三次小组会议诊断报告.jpg</a><a class=" downloadMouse downloadBtn" href=""></a></li>
+						<li class="clearfix"><a class="downSrc" href="#">第三次小组会议诊断报告.jpg</a><a class=" downloadMouse downloadBtn" href=""></a></li>
 					</ul>
 				</div>
 			</div>

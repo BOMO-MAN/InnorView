@@ -16,7 +16,11 @@ h2 {
 	padding-top: 240px;
 }
 form {
-	margin-bottom: 40px;
+	width: 600px;
+	height: 400px;
+	margin: 0 auto;
+	text-align: center;
+	// border: 1px solid;
 }
 .system {
 	text-align: center;
@@ -46,7 +50,7 @@ button {
 	margin: 20px auto;
 	width: 400px;
 	position: relative;
-/*	left: 10px;*/
+	left: -6px;
 }
 /* 直播系统、点播系统选择*/
 span {

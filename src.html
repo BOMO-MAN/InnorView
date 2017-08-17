@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<title>视频点播详情</title>
 	<link rel="stylesheet" href="./style/reset.css">
 	<link rel="stylesheet" href="./style/main.css">
@@ -12,13 +13,13 @@
 	<header>
 		<div id="head" class="clearfix">
 			<img class="logo" src="./src/logo.png" alt="logo">
-			<div class="img">
+<!-- 			<div class="img">
 				<img src="./src/icon.jpg" alt="">
-			</div>
+			</div> -->
 			<div class="nav">
 				<ul>
 <!-- 					<li><a href="index.html">直播</a></li> -->
-					<li class="active"><a href="play.html">首页</a></li>
+					<li><a href="play.html">首页</a></li>
 					<li><a href="login.html">退出</a></li>
 				</ul>
 			</div>
@@ -34,8 +35,8 @@
 				<div class="video_header">
 					<img src="./src/doctor.jpg" alt="头像">
 					<div class="text">
-						<h3><span>回放：</span>张启明教授胸外科手术</h3>
-						<h4>拥有30多年临床经验，有丰富的胸外科手术经验</h4>
+						<h3>点播： <span id="opsNamePlay">张启明教授胸外科手术</span></h3>
+						<h4 id="introductionPlay">拥有30多年临床经验，有丰富的胸外科手术经验</h4>
 					</div>
 				</div>
 				<div class="video" >
@@ -46,14 +47,14 @@
 			<div class="btn ">
 				<div class="passageway clearfix">
 					<ul>
-						<li class="passagewayBtn passSelect"><a href="#">腔镜视频</a></li>
-						<li class="passagewayBtn passSelect"><a href="#">腔镜视频</a></li>
-						<li class="passagewayBtn passSelect"><a href="#">腔镜视频</a></li>
-						<li class="passagewayBtn passSelect"><a href="#">腔镜视频</a></li>
-						<li class="passagewayBtn passSelect"><a href="#">腔镜视频</a></li>
-						<li class="passagewayBtn passSelect"><a href="#">腔镜视频</a></li>
-						<li class="passagewayBtn passSelect"><a href="#">腔镜视频</a></li>
-						<li class="passagewayBtn passSelect"><a href="#">腔镜视频</a></li>
+						<li class="passagewayBtn passSelect"><a Select="tag" href="#">腔镜视频</a></li>
+						<li class="passagewayBtn passSelect"><a Select="tag" href="#">腔镜视频</a></li>
+						<li class="passagewayBtn passSelect"><a Select="tag" href="#">腔镜视频</a></li>
+						<li class="passagewayBtn passSelect"><a Select="tag" href="#">腔镜视频</a></li>
+						<li class="passagewayBtn passSelect"><a Select="tag" href="#">腔镜视频</a></li>
+						<li class="passagewayBtn passSelect"><a Select="tag" href="#">腔镜视频</a></li>
+						<li class="passagewayBtn passSelect"><a Select="tag" href="#">腔镜视频</a></li>
+						<li class="passagewayBtn passSelect"><a Select="tag" href="#">腔镜视频</a></li>
 					</ul>
 				</div>
 				<div class="splitScreen">
@@ -92,33 +93,34 @@
 		<div class="video_resume">
 			<div class="personMsg">
 				<h3>患者信息</h3>
-				<p>姓名：<span>王小龙</span></p>
-				<p>病史：<span>无</span></p>
-				<p>症状：<div class="input_text1">肿块的生长速度，伴随症状都可以给诊断提供一定的线索。胃癌在病史中常有进行性的食欲缺乏、贫血、消瘦。胆囊肿大，伴有进行性的黄疽而无腹痛常提示有胰头癌。胆囊肿大。间歇性黄疽伴有发作性右上腹痛及发热多见于胆石症。肝脏肿大，如病史中有慢性心力衰竭可能为肝脏淤血。炎性肿块常有发热及相应部位的疼痛史。病史长，肿块生长速度缓慢，不伴有其他症状，多提示为良性肿块。</div></p>
+				<p>姓名：<span id="patientName">王小龙</span></p>
+				<p>病史：<span id="history">无</span></p>
+				<p>症状：<div  id="patientState" class="input_text1">肿块的生长速度，伴随症状都可以给诊断提供一定的线索。胃癌在病史中常有进行性的食欲缺乏、贫血、消瘦。胆囊肿大，伴有进行性的黄疽而无腹痛常提示有胰头癌。胆囊肿大。间歇性黄疽伴有发作性右上腹痛及发热多见于胆石症。肝脏肿大，如病史中有慢性心力衰竭可能为肝脏淤血。炎性肿块常有发热及相应部位的疼痛史。病史长，肿块生长速度缓慢，不伴有其他症状，多提示为良性肿块。</div></p>
 			</div>
 			<div class="opsMsg">
 				<h3>手术简介</h3>
-				<p>手术医生：<span>张启明教授</span></p>
-				<p>手术名称：<span>胸外科手术</span></p>
-				<p>手术日期：<span>2016/2/17</span></p>
-				<p>手术科室：<span>8楼1002室</span></p>
-				<p>手术内容：<div class="input_text2">麻醉起效后，患者仰卧位，常规消毒、铺巾，于腹股沟韧带下方3～4cm处，以卵圆窝为中点作一与腹股沟韧带平行的斜切口，长约6cm。切开皮肤、皮下组织、浅筋膜，显露卵圆窝，解剖大隐静脉与股静脉汇合处。解剖出旋髂浅静脉，腹壁浅静脉、阴部外静脉及股内、外侧静脉，分别予以结扎切断。游离大隐静脉至与股静脉交界处，在距股静脉0.5～1cm处结扎并钳夹大隐静脉。近端双重结扎，远端用止血钳暂时钳夹等待剥离。</div></p>
+				<p>手术医生：<span id="opsNamePlay">张启明教授</span></p>
+				<p>手术名称：<span id="opsPlay">胸外科手术</span></p>
+				<p>手术日期：<span id="timePlay">2016/2/17</span></p>
+				<p>手术科室：<span id="areaPlay">8楼1002室</span></p>
+				<p>手术内容：<div id="opsText" class="input_text2">麻醉起效后，患者仰卧位，常规消毒、铺巾，于腹股沟韧带下方3～4cm处，以卵圆窝为中点作一与腹股沟韧带平行的斜切口，长约6cm。切开皮肤、皮下组织、浅筋膜，显露卵圆窝，解剖大隐静脉与股静脉汇合处。解剖出旋髂浅静脉，腹壁浅静脉、阴部外静脉及股内、外侧静脉，分别予以结扎切断。游离大隐静脉至与股静脉交界处，在距股静脉0.5～1cm处结扎并钳夹大隐静脉。近端双重结扎，远端用止血钳暂时钳夹等待剥离。</div></p>
 			</div>
 			<div class="opsDownload">
 				<h3>资料下载</h3>
 				<ul>
-					<li><a href="#">第三次小组会议诊断报告.jpg</a></li>
-					<li><a href="#">第三次小组会议诊断报告.jpg</a></li>
-					<li><a href="#">第三次小组会议诊断报告.jpg</a></li>
-					<li><a href="#">第三次小组会议诊断报告.jpg</a></li>
-					<li><a href="#">第三次小组会议诊断报告.jpg</a></li>
-					<li><a href="#">第三次小组会议诊断报告.jpg</a></li>
-					<li><a href="#">第三次小组会议诊断报告.jpg</a></li>
-					<li><a href="#">第三次小组会议诊断报告.jpg</a></li>
-					<li><a href="#">第三次小组会议诊断报告.jpg</a></li>
-					<li><a href="#">第三次小组会议诊断报告.jpg</a></li>
-					<li><a href="#">第三次小组会议诊断报告.jpg</a></li>
-					<li><a href="#">第三次小组会议诊断报告.jpg</a></li>
+						<li class="clearfix"><a class="downSrc" href="#">第三次小组会议诊断报告.jpg</a><a class=" downloadMouse downloadBtn" href=""></a></li>
+						<li class="clearfix"><a class="downSrc" href="#">第三次小组会议诊断报告.jpg</a><a class=" downloadMouse downloadBtn" href=""></a></li>
+						<li class="clearfix"><a class="downSrc" href="#">第三次小组会议诊断报告.jpg</a><a class=" downloadMouse downloadBtn" href=""></a></li>
+						<li class="clearfix"><a class="downSrc" href="#">第三次小组会议诊断报告.jpg</a><a class=" downloadMouse downloadBtn" href=""></a></li>
+						<li class="clearfix"><a class="downSrc" href="#">第三次小组会议诊断报告.jpg</a><a class=" downloadMouse downloadBtn" href=""></a></li>
+						<li class="clearfix"><a class="downSrc" href="#">第三次小组会议诊断报告.jpg</a><a class=" downloadMouse downloadBtn" href=""></a></li>
+						<li class="clearfix"><a class="downSrc" href="#">第三次小组会议诊断报告.jpg</a><a class=" downloadMouse downloadBtn" href=""></a></li>
+						<li class="clearfix"><a class="downSrc" href="#">第三次小组会议诊断报告.jpg</a><a class=" downloadMouse downloadBtn" href=""></a></li>
+						<li class="clearfix"><a class="downSrc" href="#">第三次小组会议诊断报告.jpg</a><a class=" downloadMouse downloadBtn" href=""></a></li>
+						<li class="clearfix"><a class="downSrc" href="#">第三次小组会议诊断报告.jpg</a><a class=" downloadMouse downloadBtn" href=""></a></li>
+						<li class="clearfix"><a class="downSrc" href="#">第三次小组会议诊断报告.jpg</a><a class=" downloadMouse downloadBtn" href=""></a></li>
+						<li class="clearfix"><a class="downSrc" href="#">第三次小组会议诊断报告.jpg</a><a class=" downloadMouse downloadBtn" href=""></a></li>
+						<li class="clearfix"><a class="downSrc" href="#">第三次小组会议诊断报告.jpg</a><a class=" downloadMouse downloadBtn" href=""></a></li>
 				</ul>
 			</div>
 			<div class="question">
@@ -185,5 +187,8 @@
 		</div>
 	</div>	
 	<footer>Copyright &copy 深圳亿维锐创科技股份有限公司</footer>
+
+	<script src="./js/jquery-3.2.1.js"></script>
+	<script src="./js/main.js"></script>
 </body>
 </html>

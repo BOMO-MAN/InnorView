@@ -62,6 +62,18 @@ $(document).ready(function($) {
 			}
 	});
 
+	//  下载按钮移入移出 效果
+	$('.downloadMouse').mouseenter(function(event) {
+		/* Act on the event */
+		$(this).removeClass('downloadBtn');
+		$(this).addClass('downloadBtnActive');
+	});
+	$('.downloadMouse').mouseleave(function(event) {
+		/* Act on the event */
+		$(this).removeClass('downloadBtnActive');
+		$(this).addClass('downloadBtn');
+	});
+
 
 	//  手术简介以及资料下载tab栏切换 函数
 	$('.download_tag').click(function(event) {
