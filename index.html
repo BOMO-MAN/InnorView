@@ -3,10 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
 	<title>首页</title>
 	<link rel="stylesheet" href="./style/reset.css">
 	<link rel="stylesheet" href="./style/main.css">
+	<link rel="stylesheet" href="./style/splitScreen.css">
 </head>
 <body>
 	<!-- header 头部 -->
@@ -19,7 +19,7 @@
 			<div class="nav">
 				<ul>
 					<!-- <li class="active"><a href="#">直播</a></li> -->
-					<li><a href="#">管理员</a></li>
+					<li><a id="user" href="#">管理员</a></li>
 					<li><a href="login.html">退出</a></li>
 				</ul>
 			</div>
@@ -39,9 +39,66 @@
 					</div>
 				</div>
 				<!-- 手术室选择 -->
-				<div class="ops"><button class="ops_btn">点击切换</button></div>
-				<div class="video" >
-					<video src="../src/test.webm" width="916" height="528" controls ></video>
+				<div class="ops"><button id="opsBtnChange" class="ops_btn">点击切换</button></div>
+				<div id="LiveVideo" class="video">
+					<!-- 屏幕分割 -->
+					<div id="one" style="display: none;">1</div>
+					<!-- 二分屏 -->
+					<div id="two" style="display: none;">
+						<div id="twoLeft">2.1</div>
+						<div id="twoRight">2.2</div>
+					</div>
+					<!-- 三分屏 -->
+					<div id="three" style="display: none;">
+						<div id="threeLeft">3.1</div>
+						<div id="threeRightTop">3.2</div>
+						<div id="threeRightBottom">3.3</div>
+					</div>
+					<!-- 四分屏 等分 -->
+					<div id="four" style="display: none;">
+						<div id="four1">4.1</div>
+						<div id="four2">4.2</div>
+						<div id="four3">4.3</div>
+						<div id="four4">4.4</div>
+					</div>
+					<!-- 五分屏 -->
+					<div id="five" style="display: none;">
+						<div id="fiveTop"> 5.1</div>
+						<div id="fiveBottom1">5.2</div>
+						<div id="fiveBottom2">5.3</div>
+						<div id="fiveBottom3">5.4</div>
+						<div id="fiveBottom4">5.5</div>
+					</div>
+					<!-- 六分屏 -->
+					<div id="six" style="display: block;">
+						<div id="sixTop1">6.1</div>
+						<div id="sixTop2">6.2</div>
+						<div id="sixTop3">6.3</div>
+						<div id="sixBottom1">6.4</div>
+						<div id="sixBottom2">6.5</div>
+						<div id="sixBottom3">6.6</div>
+					</div>
+					<!-- 七分屏 -->
+					<div id="seven" style="display: none;">
+						<div id="sevenLeft1">7.1</div>
+						<div id="sevenLeft2">7.2</div>
+						<div id="sevenLeft3">7.3</div>
+						<div id="sevenLeft4">7.4</div>
+						<div id="sevenRight1">7.5</div>
+						<div id="sevenRight2">7.6</div>
+						<div id="sevenRight3">7.7</div>
+					</div>
+					<!--  八分屏 -->
+					<div id="eight" style="display: none;">
+						<div id="eightTop1">8.1</div>
+						<div id="eightTop2">8.2</div>
+						<div id="eightTop3">8.3</div>
+						<div id="eightTop4">8.4</div>
+						<div id="eightBottom1">8.5</div>
+						<div id="eightBottom2">8.6</div>
+						<div id="eightBottom3">8.7</div>
+						<div id="eightBottom4">8.8</div>
+					</div>
 				</div>
 				<span class="box_btn close_btn"></span>
 			</div>
@@ -69,14 +126,14 @@
 				<div class="radioSelectAll">
 					<form>
 						<select name="radioSelect">
-							<option value="volvo">音频：全部</option>
-							<option value="saab">音频：静音</option>
+							<option id="radioSelect" value="volvo">音频：全部</option>
+							<optio id="radioNull" value="saab">音频：静音</option>
 						</select>
 					</form>
 					<form>
 						<select name="file">
-							<option value="volvo">模式：live</option>
-							<option value="saab">模式：vod</option>
+							<option id="selectLive" value="volvo">模式：live</option>
+							<option id="selectVod" value="saab">模式：vod</option>
 						</select>
 					</form>
 				</div>
@@ -86,9 +143,9 @@
 					<img src="./src/3.jpg" alt="icon">
 					<img src="./src/4.jpg" alt="icon">
 					<img src="./src/5.jpg" alt="icon">
-					<img src="./src/6.jpg" alt="icon">
+					<img class="screenSelect" src="./src/6.jpg" alt="icon">
 					<img src="./src/7.jpg" alt="icon">
-					<img class="screenSelect" src="./src/8.jpg" alt="icon">
+					<img class="" src="./src/8.jpg" alt="icon">
 				</div>
 			</div>
 		</div>
@@ -109,7 +166,7 @@
 					<p>手术名称：<span id="docOperation">胸外科手术</span></p>
 				</div>
 				<div class="download_list" style="display: none;">
-					<ul>
+					<ul id="file">
 						<li class="clearfix"><a class="downSrc" href="#">第三次小组会议诊断报告.jpg</a><a class=" downloadMouse downloadBtn" href=""></a></li>
 						<li class="clearfix"><a class="downSrc" href="#">第三次小组会议诊断报告.jpg</a><a class=" downloadMouse downloadBtn" href=""></a></li>
 						<li class="clearfix"><a class="downSrc" href="#">第三次小组会议诊断报告.jpg</a><a class=" downloadMouse downloadBtn" href=""></a></li>
@@ -129,7 +186,7 @@
 			<!-- 互动 -->
 			<div class="msg">
 				<div class="sendMsg">
-					<ul>
+					<ul id="MsgShow">
 						<li><span>admin:</span>第一版本上线了</li>
 						<li><span>admin:</span>第一版本上线了</li>
 						<li><span>admin:</span>第一版本上线了</li>
@@ -148,9 +205,9 @@
 					</ul>
 				</div>
 				<div class="inputMsg">
-					<input type="text" placeholder="输入你的问题...">
-					<button class="radio">语音</button>
-					<button class="send">发送</button>
+					<input id="MsgInputText" type="text" placeholder="输入你的问题...">
+					<button id="AudioMsg" class="radio">语音</button>
+					<button id="sendMsg" class="send">发送</button>
 				</div>
 			</div>
 		</div>

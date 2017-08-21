@@ -91,6 +91,57 @@ $(document).ready(function($) {
 			$('.download_list').show()
 		}
 	});
+	// 分屏功能切换函数 
+	$('.splitScreen img').click(function(event) {
+		/* Act on the event */
+		console.log($(this).index());
+		$(this).siblings().removeClass('screenSelect')
+		$(this).addClass('screenSelect');
+
+		var num = $(this).index()
+		switch (num)
+			{
+					case 0:
+					$('#LiveVideo>div').hide()
+					$('#one').show();
+					break;
+
+					case 1:
+					$('#LiveVideo>div').hide()
+					$('#two').show();
+					break;
+
+					case 2:
+					$('#LiveVideo>div').hide()
+					$('#three').show();
+
+					break;
+					case 3:
+					$('#LiveVideo>div').hide()
+					$('#four').show();
+					break;
+
+					case 4:
+					$('#LiveVideo>div').hide()
+					$('#five').show();
+					break;
+
+					case 5:
+					$('#LiveVideo>div').hide()
+					$('#six').show();
+					break;
+					case 6:
+					$('#LiveVideo>div').hide()
+					$('#seven').show();
+					break;
+
+					case 7:
+					$('#LiveVideo>div').hide()
+					$('#eight').show();
+					break;
+
+			}
+	});
 
 	//  视频检索处 切换功能
 	$('.tag ').click(function(event) {

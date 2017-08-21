@@ -1,0 +1,230 @@
+/*分屏样式*/
+#one,
+#two,
+#three,
+#four,
+#five,
+#six,
+#seven,
+#eight {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+/* 二分屏*/
+#twoLeft,
+#twoRight {
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	border: 1px solid #07c5c5;
+}
+#twoRight {
+	right: 0;
+}
+/*三分屏*/
+#threeLeft {
+	margin:0;
+	width: 70%;
+	height: 100%;
+	border: 1px solid #07c5c5;
+/*	float: left;
+	left: 0;*/
+}
+#threeRightTop,
+#threeRightBottom {
+	width: 30%;
+	height: 50%;
+	border: 1px solid #07c5c5;
+	position: absolute;
+}
+#threeRightTop {
+	top: 0;
+	right: 0;
+}
+#threeRightBottom {
+	bottom: 0;
+	right: 0;
+}
+/* 四分屏*/
+#four1,
+#four2,
+#four3,
+#four4 {
+	width: 50%;
+	height: 50%;
+	border: 1px solid #07c5c5;
+	position: absolute;
+}
+#four1 {
+	top: 0;
+	left: 0;
+}
+#four2 {
+	top: 0;
+	right: 0;
+}
+#four3 {
+	bottom: 0;
+	left: 0;
+}
+#four4 {
+	right: 0;
+	bottom: 0;
+}
+/* 五分屏*/
+#fiveTop,
+#fiveBottom1,
+#fiveBottom2,
+#fiveBottom3,
+#fiveBottom4 {
+	position: absolute;
+	border: 1px solid #07c5c5;
+}
+#fiveTop {
+	width: 100%;
+	height: 66.7%;
+}
+#fiveBottom1,
+#fiveBottom2,
+#fiveBottom3,
+#fiveBottom4 {
+	width: 25%;
+	height: 33.3%;
+	bottom: 0;
+}
+#fiveBottom2 {
+	left: 25%;
+}
+#fiveBottom3 {
+	left: 50%;
+}
+#fiveBottom4 {
+	right: 0;
+}
+/* 六分屏*/
+#sixTop1,
+#sixTop2,
+#sixTop3,
+#sixBottom1,
+#sixBottom2,
+#sixBottom3 {
+	position: absolute;
+	border: 1px solid #07c5c5;
+}
+#sixTop1 {
+	width: 66.7%;
+	height: 66.7%;
+}
+#sixTop2,
+#sixTop3,
+#sixBottom1,
+#sixBottom2,
+#sixBottom3 {
+	width: 33.3%;
+	height: 33.3%;
+}
+#sixTop2 {
+	top: 0;
+	right: 0;
+}
+#sixTop3 {
+	top: 33.3%;
+	right: 0;
+}
+#sixBottom1 {
+	left: 0;
+	bottom: 0;
+}
+#sixBottom2 {
+	width: 33.4%;
+	left: 33.3%;
+	bottom: 0;
+}
+#sixBottom3 {
+	height: 33.4%;
+	right: 0;
+	bottom: 0;
+}
+/* 七分屏*/
+#sevenLeft1,
+#sevenLeft2,
+#sevenLeft3,
+#sevenLeft4 {
+	width: 33.3%;
+	height: 50%;
+	border: 1px solid #07c5c5;
+	position: absolute;
+}
+#sevenLeft2 {
+	left: 33.3%;
+}
+#sevenLeft3 {
+	left: 0;
+	bottom: 0;
+}
+#sevenLeft4 {
+	bottom: 0;
+	left: 33.3%;
+}
+#sevenRight1,
+#sevenRight2,
+#sevenRight3 {
+	width: 33.4%;
+	height: 33.3%;
+	border: 1px solid #07c5c5;
+	position: absolute;
+	right: 0;
+}
+#sevenRight2 {
+	top: 33.3%;
+}
+#sevenRight3 {
+	height: 33.4%;
+	bottom: 0;
+}
+/*八分屏*/
+#eightTop1 {
+	width: 75%;
+	height: 75%;
+	border: 1px solid #07c5c5;
+}
+#eightTop2,
+#eightTop3,
+#eightTop4 {
+	width: 25%;
+	height: 25%;
+	border: 1px solid #07c5c5;
+	position: absolute;
+	right: 0;
+}
+#eightTop2 {
+	top: 0;
+}
+#eightTop3 {
+	top: 25%;
+}
+#eightTop4 {
+	top: 50%;
+	right: 0;
+}
+
+
+#eightBottom1,
+#eightBottom2,
+#eightBottom3,
+#eightBottom4 {
+	width: 25%;
+	height: 25%;
+	border: 1px solid #07c5c5;
+	position: absolute;
+}
+#eightBottom2 {
+	left: 25%;
+}
+#eightBottom3 {
+	left: 50%;
+}
+#eightBottom4 {
+	left: 75%;
+}

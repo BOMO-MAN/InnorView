@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="./style/reset.css">
 	<link rel="stylesheet" href="./style/main.css">
 	<link rel="stylesheet" href="./style/play.css">
+	<link rel="stylesheet" href="./style/splitScreen.css">
 </head>
 <body>
 	<!-- header 头部 -->
@@ -39,8 +40,65 @@
 						<h4 id="introductionPlay">拥有30多年临床经验，有丰富的胸外科手术经验</h4>
 					</div>
 				</div>
-				<div class="video" >
-					<video src="../src/test.mp4" width="916" height="528" controls ></video>
+				<div id="LiveVideo" class="video">
+					<!-- 屏幕分割 -->
+					<div id="one" style="display: none;">1</div>
+					<!-- 二分屏 -->
+					<div id="two" style="display: block;">
+						<div id="twoLeft">2.1</div>
+						<div id="twoRight">2.2</div>
+					</div>
+					<!-- 三分屏 -->
+					<div id="three" style="display: none;">
+						<div id="threeLeft">3.1</div>
+						<div id="threeRightTop">3.2</div>
+						<div id="threeRightBottom">3.3</div>
+					</div>
+					<!-- 四分屏 等分 -->
+					<div id="four" style="display: none;">
+						<div id="four1">4.1</div>
+						<div id="four2">4.2</div>
+						<div id="four3">4.3</div>
+						<div id="four4">4.4</div>
+					</div>
+					<!-- 五分屏 -->
+					<div id="five" style="display: none;">
+						<div id="fiveTop"> 5.1</div>
+						<div id="fiveBottom1">5.2</div>
+						<div id="fiveBottom2">5.3</div>
+						<div id="fiveBottom3">5.4</div>
+						<div id="fiveBottom4">5.5</div>
+					</div>
+					<!-- 六分屏 -->
+					<div id="six" style="display: none;">
+						<div id="sixTop1">6.1</div>
+						<div id="sixTop2">6.2</div>
+						<div id="sixTop3">6.3</div>
+						<div id="sixBottom1">6.4</div>
+						<div id="sixBottom2">6.5</div>
+						<div id="sixBottom3">6.6</div>
+					</div>
+					<!-- 七分屏 -->
+					<div id="seven" style="display: none;">
+						<div id="sevenLeft1">7.1</div>
+						<div id="sevenLeft2">7.2</div>
+						<div id="sevenLeft3">7.3</div>
+						<div id="sevenLeft4">7.4</div>
+						<div id="sevenRight1">7.5</div>
+						<div id="sevenRight2">7.6</div>
+						<div id="sevenRight3">7.7</div>
+					</div>
+					<!--  八分屏 -->
+					<div id="eight" style="display: none;">
+						<div id="eightTop1">8.1</div>
+						<div id="eightTop2">8.2</div>
+						<div id="eightTop3">8.3</div>
+						<div id="eightBottom1">8.4</div>
+						<div id="eightBottom2">8.5</div>
+						<div id="eightBottom3">8.6</div>
+						<div id="eightBottom4">8.7</div>
+						<div id="eightBottom5">8.8</div>
+					</div>
 				</div>
 			</div>
 			<!-- 按钮 -->
@@ -107,7 +165,7 @@
 			</div>
 			<div class="opsDownload">
 				<h3>资料下载</h3>
-				<ul>
+				<ul id="file">
 						<li class="clearfix"><a class="downSrc" href="#">第三次小组会议诊断报告.jpg</a><a class=" downloadMouse downloadBtn" href=""></a></li>
 						<li class="clearfix"><a class="downSrc" href="#">第三次小组会议诊断报告.jpg</a><a class=" downloadMouse downloadBtn" href=""></a></li>
 						<li class="clearfix"><a class="downSrc" href="#">第三次小组会议诊断报告.jpg</a><a class=" downloadMouse downloadBtn" href=""></a></li>
