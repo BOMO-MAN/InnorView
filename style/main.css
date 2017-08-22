@@ -29,7 +29,7 @@ header {
 /*	border: 1px solid yellow;*/
 }
 header #head {
-	width: 1312px;
+	max-width: 1312px;
 	margin: 0 auto;
 }
 header #head .logo {
@@ -161,11 +161,12 @@ header .nav ul li {
 		line-height: 36px;
 		font-size: 18px;
 		text-align: center;
-		color: #999;
+		color: #fff;
 		border: 1px solid #d5d5d5;
 		border-radius: 20px;
 		cursor: pointer;
 		letter-spacing: 2px;
+		background: #07c5c5;
 	}
 	.ops button:active {
 		background: #07c5c5;
